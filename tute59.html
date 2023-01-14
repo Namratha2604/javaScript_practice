@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date</title>
+</head>
+<style>
+    .container{
+        font-size: 20px;
+        background-color: rgb(243, 213, 190);
+        padding: 40px;
+        margin: auto;
+        text-align: center;
+        border: 2px solid black;
+
+
+    }
+    #time{
+        font-weight: bold;
+
+    }
+
+</style>
+<body>
+    <div class="container">
+        Time right now is: <span id="time"></span>
+    </div>
+    <script>
+        // console.log("this is date and time tute")
+        // let dt = new Date();
+        // console.log(dt);
+
+        // let now= new Date(10);
+        // console.log(now);
+
+        let newDate = new Date("2023-04-26");
+        console.log(newDate);
+
+        let yr = newDate.getFullYear();
+        console.log("this year is", yr)
+
+
+        let month = newDate.getMonth();
+        console.log("this month is",month);
+
+
+        let dt = newDate.getDate();
+        console.log("this date is", dt);
+
+        let hours = newDate.getHours();
+        console.log("this hours is", hours);
+
+        let day = newDate.getDay();
+        console.log("this day is", day);
+        //set new date
+        newDate.setDate(16);
+        console.log(newDate);
+        ///from scratch
+        // function displayTime(){
+        //     time= new Date();
+        //     console.log(time);
+        //     document.getElementById("time").innerHTML=time;
+        // }
+        //     setInterval(displayTime,1000)
+        //copied
+        // function displayTime(){
+        // time = new Date();
+        // console.log(time);
+        // document.getElementById("time").innerHTML=time;
+        // }
+        // setInterval(displayTime,1000);
+        //from him
+        setInterval(showtime,1000);
+        function showtime(){
+        time.innerHTML=new Date;
+        // // console.log(time)
+        // setTimeout(1000).innerHTML=time;
+        // document.getElementById("time");
+        }
+        
+        
+
+
+    </script>
+</body>
+</html>
