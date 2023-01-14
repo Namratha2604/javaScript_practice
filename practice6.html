@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime Numbers</title>
+</head>
+<body>
+    
+</body>
+<script>
+    //prime numbers
+    let number = prompt("please give a number","");
+    if(number == 1){
+        console.log(`${number} is neither prime nor ecomposite`);
+    }else if(number<1){
+        console.log(`${number} is not a prime number`);
+    }else{
+        //if number = 15
+        for(var i=2; i<number; i++){
+            //15%2 7.5 which is not a prome number
+            if(number % i == 0){
+                var res = `${number} it is not a prime number`;
+                break;
+            }else{
+                var res = `${number} it is a prime number`;
+            }
+        }
+        console.log(res);
+    }
+
+</script>
+</html>
