@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator using js</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let num1 = prompt("please enter first number","");
+    let num2 = prompt( " please enter second number");
+    let opr = prompt("please select among + , - , / , x ","");
+    switch(opr){
+        //if opr == +
+        case "+":
+            let res1 = parseFloat(num1)+ parseFloat(num2);
+            console.log(`${num1} + ${num2} = ${res1}`);
+            break;
+            
+            //if opr == "-"
+        case "-":
+            let res2 = parseFloat(num1)- parseFloat(num2);
+            console.log(`${num1} - ${num2} = ${res2}`);
+            break;
+
+            //if opr == *
+        case "x":
+            let res3 = parseFloat(num1)* parseFloat(num2);
+            console.log(`${num1} x ${num2} = ${res3}`);
+            break;
+
+        case "/":
+            let res4 = parseFloat(num1)/ parseFloat(num2);
+            console.log(`${num1} / ${num2} = ${res4}`);
+            break;
+
+            default:
+            console.log("Invalid Operator");
+
+
+    }
+</script>
+</html>
