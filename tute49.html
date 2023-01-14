@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>string functions</title>
+</head>
+<body>
+    <div class="container">
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt doloribus magnam cum earum voluptate itaque est, praesentium quaerat corrupti sapiente? Quas necessitatibus qui
+
+        </p>
+
+    </div>
+    <script>
+        var str = "This is a string";
+        console.log(str);
+        //first occurence of substring
+        var position = str.indexOf('is');
+        console.log(position);
+
+        //last occurence os the substring
+        position = str.lastIndexOf('is');
+        console.log(position);
+
+        //SUBSTRING FROM STRING
+        // var substr = str.slice(1,6)
+        var just = str.substring(1,6)
+        console.log(just)
+
+        //replace a word in a string by not changing the original string
+
+        // var replaced = str.replace("string", "harry")
+        // console.log(str)
+        // console.log(replaced)
+
+        console.log(str.toUpperCase());
+        console.log(str.toLocaleLowerCase());
+
+       //concatinating a new string in already existing string
+
+        var newString = str.concat(" New string")
+        console.log(newString)
+       //trims the white spaces at starting and ending
+
+        var strWithWhitespaces = "    this contains     white scapes        ";
+        console.log(strWithWhitespaces)
+        console.log(strWithWhitespaces.trim())
+
+        //var char3 = str.charAt(2)
+        //var char3 = str.charCodeAt(2)//not important
+       // console.log(char3)
+       console.log(str[3])
+    </script>
+</body>
+</html>
